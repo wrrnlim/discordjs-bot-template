@@ -2,6 +2,10 @@
 
 Starter code for a Discord bot, based on [Discord.js](https://discord.js.org/#/). The official guide can be found [here](https://discordjs.guide/).
 
+## Use this template
+
+Fork this repository and run `npm install` to begin.
+
 ## Set up a Discord application and create a bot
 
 Firstly, we need to set up a Discord application. We can do this by going to [Discord Developer Portal](https://discord.com/developers/applications) -> New Application. Once we have an application, we can create a bot for it.
