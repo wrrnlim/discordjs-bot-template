@@ -56,3 +56,5 @@ The worker dyno will be off by default. Navigate to the "Resources" tab -> ✏ o
 
 Finally, we need to add our environment variable so that our code on Heroku can access our bot. Navigate to your app's settings on Heroku, and add a `CLIENTID`, `TOKEN`, and `GUILDID` (if needed) variable.
 ![Config Vars](img/configvars.png)
+
+You can view logs using the "More" button on the top right.
