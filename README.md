@@ -50,3 +50,5 @@ Commit your code to your GitHub repository so we can deploy to Heroku. Go to [He
 
 Next, enable auto deploy so every time you push to your production branch (`main` by default), your deployment would be updated too.
 ![Auto deploy](img/autodeploy.png)
+
+Finally, we need to add our environment variable so that our code on Heroku can access our bot. Navigate to your app's settings on Heroku, and add a `CLIENTID`, `TOKEN`, and `GUILDID` (if needed) variable.
