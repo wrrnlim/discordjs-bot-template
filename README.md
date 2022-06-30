@@ -34,3 +34,19 @@ Now we can add code for the bot. In this repo, we are using `.env` file to store
 We can now run `npm run deploy` to make our slash commands available. Then we can run `npm start` to start the bot.
 
 Follow the [official guide](https://discordjs.guide/creating-your-bot/#resulting-code) to understand more about the code in this template, and customize the bot for yourself!
+
+## Deploy to Heroku
+
+Heroku can host the code for your bot to keep it running 24/7. Firstly, we need a `Procfile`. Create a file named `Procfile` in your root directory, and add the following line within it:
+
+```profile
+worker: node index.js
+```
+
+`index.js` is the entry point of our app. If you named yours differently, replace it with the correct file name. This sets up a worker (called dynos in Heroku) to run your app. By default, Heroku will assume your app is a web app, which will not work for our bot.
+
+Commit your code to your GitHub repository so we can deploy to Heroku. Go to [Heroku](https://www.heroku.com/) and create a new app. Select "Connect to GitHub," and find your repository.
+![Heroku connect to GitHub](img/herokugh.png).
+
+Next, enable auto deploy so every time you push to your production branch (`main` by default), your deployment would be updated too.
+![Auto deploy](img/autodeploy.png)
