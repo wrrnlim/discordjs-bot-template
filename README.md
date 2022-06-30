@@ -21,4 +21,10 @@ Open the generated URL, and you will be able to invite the bot to your server.
 
 ## Code the bot
 
-Now we can add code for the bot. In this repo, we are using `.env` file to store our secrets.
+Now we can add code for the bot. In this repo, we are using `.env` file to store our secrets. You do not want to commit or share this file, so be sure to add it to `.gitignore`. You need the following secrets for your bot to work:
+
+- `CLIENTID`: Get this ID by going to your [Discord Application](https://discord.com/developers/applications/) and viewing the "General Information." Copy and paste the "Application ID" into `.env` after `CLIENTID=`
+- `TOKEN`: This is your OAuth token. Make sure this is not shared with anyone, as it gives access to your bot. You can get this token in the "Bot" section and "Reset Token." This token is only shown once. Copy and paste it into `.env` after `TOKEN=`
+- `GUILDID`: You only need this if you want to make commands that only work in a certain server. You can get this by enabling Developer Mode in Disocrd settings, then right clicking your server icon and selecting "Copy ID".
+
+Follow the [official guide](https://discordjs.guide/creating-your-bot/#resulting-code) to understand more about the code in this template, and customize the bot for yourself!
