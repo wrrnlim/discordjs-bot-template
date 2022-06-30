@@ -27,4 +27,6 @@ Now we can add code for the bot. In this repo, we are using `.env` file to store
 - `TOKEN`: This is your OAuth token. Make sure this is not shared with anyone, as it gives access to your bot. You can get this token in the "Bot" section and "Reset Token." This token is only shown once. Copy and paste it into `.env` after `TOKEN=`
 - `GUILDID`: You only need this if you want to make commands that only work in a certain server. You can get this by enabling Developer Mode in Disocrd settings, then right clicking your server icon and selecting "Copy ID".
 
+We can now run `npm run deploy` to make our slash commands available. Then we can run `npm start` to start the bot.
+
 Follow the [official guide](https://discordjs.guide/creating-your-bot/#resulting-code) to understand more about the code in this template, and customize the bot for yourself!
