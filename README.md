@@ -48,8 +48,11 @@ worker: node index.js
 Commit your code to your GitHub repository so we can deploy to Heroku. Go to [Heroku](https://www.heroku.com/) and create a new app. Select "Connect to GitHub," and find your repository.
 ![Heroku connect to GitHub](img/herokugh.png).
 
-Next, enable auto deploy so every time you push to your production branch (`main` by default), your deployment would be updated too.
+Next, enable auto deploy so every time you push to your production branch (`main` by default), your deployment would be updated too. Deploy by pushing to your `main` branch or using the manual deploy button.
 ![Auto deploy](img/autodeploy.png)
+
+The worker dyno will be off by default. Navigate to the "Resources" tab -> ✏ on the worker dyno, and turn it on. Be sure to click confirm.
+![Worker Dyno](img/workerdyno.png)
 
 Finally, we need to add our environment variable so that our code on Heroku can access our bot. Navigate to your app's settings on Heroku, and add a `CLIENTID`, `TOKEN`, and `GUILDID` (if needed) variable.
 ![Config Vars](img/configvars.png)
