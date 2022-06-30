@@ -1,0 +1,28 @@
+{
+  "name": "discordjs-bot-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrrnlim/discordjs-bot-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrrnlim/discordjs-bot-template/issues"
+  },
+  "homepage": "https://github.com/wrrnlim/discordjs-bot-template#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.35.0",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1"
+  }
+}

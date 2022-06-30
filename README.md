@@ -18,3 +18,7 @@ For bot permissions, select the permissions that your bot will require. This dep
 ![permissions](img/permissions.png)
 
 Open the generated URL, and you will be able to invite the bot to your server.
+
+## Code the bot
+
+Now we can add code for the bot. In this repo, we are using `.env` file to store our secrets.
